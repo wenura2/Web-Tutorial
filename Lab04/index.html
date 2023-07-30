@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <section>
+
+        <form name="g" method="post" action="new.php">
+            <div class="first">
+                <h1>Registration Form</h1>
+
+
+                <div class="inputs">
+                    <p>First Name</p>
+                    <input type="text" class="input-feilds" name="FirstName" placeholder="">
+                </div>
+
+                <div class="inputs" style="justify-content: space-between;">
+                    <p>Last Name</p>
+                    <input type="text" class="input-feilds" name="LastName" placeholder="">
+                </div>
+
+                <div class="inputs">
+                    <p>Mobile Number:</p>
+                    <input type="text" class="input-feilds" name="Mobile" placeholder="">
+                </div>
+
+                <div class="inputs">
+                    <p>Gender:</p>
+                    <div class="gender-box">
+                        <input type="radio" name="gender" value="f">Female
+                        <input type="radio" name="gender" value="m">male
+                    </div>
+                </div>
+                <div class="inputs">
+                    <p>Favourite Music: </p>
+
+                    <input type="checkbox" name="POP" value="1">
+                    <p>POP</p>
+
+                    <input type="checkbox" name="Rock" value="2">
+                    <p>
+                        Rock
+                    </p>
+
+                    <input type="checkbox" name="Other" value="3">
+                    <p>
+                        Other
+                    </p>
+                </div>
+
+                <div class="inputs" style="justify-content: space-between;">
+                    <p>Additional details:</p>
+                    <input type="text" class="input-feilds" name="Additional" placeholder="">
+                </div>
+
+            </div>
+            <div class="secound">
+                <input type="checkbox" name="agree" value="agree">
+                <p>
+                    I agree to the terms and conditions
+                </p>
+            </div>
+            <div class="secound">
+                <input class="log-button" type="submit" name="log" value="Submit">
+                <input class="log-button" type="reset" name="reset" value="Reset">
+            </div>
+
+        </form>
+    </section>
+    <section></section>
+</body>
+
+</html>

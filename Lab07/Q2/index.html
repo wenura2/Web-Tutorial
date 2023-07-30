@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grade Calculator</title>
+</head>
+
+<body>
+    <script>
+        function calculateAverageAndGrade() {
+            let totalMarks = 0;
+
+
+            for (let i = 1; i <= 5; i++) {
+                const mark = parseFloat(prompt(`Enter Mark ${i}:`));
+                totalMarks += mark;
+            }
+
+
+            const average = totalMarks / 5;
+
+
+            alert(`Total Marks: ${totalMarks}\nAverage: ${average}`);
+
+
+            if (average > 30) {
+                alert("Congrats! You passed");
+            } else {
+                alert("Better luck next time");
+            }
+        }
+    </script>
+
+    <h2>Click the button below to calculate grades</h2>
+    <button onclick="calculateAverageAndGrade()">Calculate Grade</button>
+</body>
+
+</html>

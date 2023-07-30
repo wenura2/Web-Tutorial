@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Date and Time</title>
+</head>
+
+<body>
+    <h2>Current Date and Time:</h2>
+    <p id="datetime"></p>
+
+    <script>
+        function displayDateTime() {
+            const currentDateTime = new Date();
+
+            const day = currentDateTime.getDate();
+            const month = currentDateTime.getMonth() + 1;
+            const year = currentDateTime.getFullYear();
+            const hours = currentDateTime.getHours();
+            const minutes = currentDateTime.getMinutes();
+            const seconds = currentDateTime.getSeconds();
+
+            const formattedDateTime = `${day}/${month}/${year} ${hours}:${formatTimeComponent(minutes)}:${formatTimeComponent(seconds)}`;
+            document.getElementById("datetime").textContent = formattedDateTime;
+        }
+
+        function formatTimeComponent(component) {
+            return component.toString().padStart(2, '0');
+        }
+
+        setInterval(displayDateTime, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+:root {
+    --image: url(./src/img/download.jpg);
+}
+
+body {
+    font-family: 'arial';
+    font-size: small;
+    padding: 10px;
+}
+
+.first {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    border: 2px solid darkgray;
+}
+
+.first>div {
+    margin: 5px 10px;
+}
+
+.inputs {
+    max-width: 300px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.input-feilds {
+    text-align: center;
+}
+
+.gender-box {
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    display: flex;
+}
+
+.secound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secound>input {
+    margin: 10px;
+}
